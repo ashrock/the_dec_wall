@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/the_wall_favicon.svg">
+    <meta name="description" content="Login or Register your Account to start using The Wall">
+    <meta name="author" content="Jan Dreau Ganggangan">
+    <title>The Wall | Sign In/Up Page</title>
+    <link rel="stylesheet" href="../assets/css/index.css"/>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="account_container">
+            <form action="/" method="POST" class="user_form show" id="signup_form">
+                <div class="user_form_header">
+                    <div class="header_text">
+                        <h2 class="welcome_text">Welcome,</h2>
+                        <h3 class="header_subtext">Register a new account.</h3>
+                    </div>
+                </div>
+                <div class="form_inline_group">
+                    <div class="form_group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="form_group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form_group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="submit" class="submit_form_btn">Signup</button>
+                <p>Already have an account? <a class="show_login_form_link" href="#login_form" title="#login_form">Login</a></p>
+            </form>
+            <form action="/" method="POST" class="user_form" id="login_form">
+                <div class="user_form_header">
+                    <div class="header_text">
+                        <h2 class="welcome_text">Welcome,</h2>
+                        <h3 class="header_subtext">Login your account.</h3>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form_group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="submit" class="submit_form_btn">Sign in</button>
+                <p>Don’t have an account? <a class="show_signup_form_link" href="#signup_form" title="#signup_form">Sign up</a></p>
+            </form>
+            <div id="account_sidebar">
+                <div class="sidebar_content"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./../assets/js/global.js"></script>
+    <script src="./../assets/js/index.js"></script>
+</body>
+</html>

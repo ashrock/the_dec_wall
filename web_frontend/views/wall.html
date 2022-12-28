@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/the_wall_favicon.svg">
+    <meta name="description" content="Write what is on your mind using The Wall">
+    <meta name="author" content="Jan Dreau Ganggangan">
+    <title>The Wall | Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/wall.css">
+</head>
+<body>
+    <div id="main_navigation">
+        <img src="../assets/images/the_wall_logo.svg" alt="The Wall Logo">
+        <div class="placeholder"></div>
+        <div id="user_details">
+            <span class="user_name">Jadee Ganggangan</span>
+            <a href="./index.html" class="logout_link"><span class="logout_text">Logout</span></a>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h2>Hello Jadee,</h2>
+        <h1>Welcome to V88 Forum Dashboard</h1>
+        <form method="POST" action="/" id="post_form" class="message_form">
+            <div class="message_block">
+                <textarea name="message_content" placeholder="Post your Topic..." class="message_content"></textarea>
+                <button type="submit" class="submit_btn">Post</button>
+            </div>
+        </form>
+        <h4>Recent Forums</h4>
+        <ul id="posts_list"></ul>
+        <div id="no_posts_block">
+            <p>No post yet.</p>
+        </div>
+        <ul id="clones_list">
+            <li class="message_item">
+                <form method="POST" action="/" class="edit_message_form">
+                    <div class="message_block">
+                        <textarea name="message_content" placeholder="Post your Topic..." class="message_content"></textarea>
+                        <button type="submit" class="submit_btn">Save</button>
+                    </div>
+                    <p class="message_content"></p>
+                </form>
+                <div class="message_actions">
+                    <div class="author_details">
+                        <span class="author_name">Jadee Ganggangan</span>
+                        <span class="posted_at">(few sec ago)</span><span class="total_responses">0 Responses</span>
+                    </div>
+                    <div class="action_btns">
+                        <button class="action_btn edit_btn" type="button"></button>
+                        <button class="action_btn delete_btn" type="button"></button>
+                        <div class="confirm_delete">
+                            <h4>Confirm Delete?</h4>
+                            <button type="button" class="confirm_btn">No</button>
+                            <button type="button" class="confirm_btn yes_btn">Yes</button>
+                        </div>
+                    </div>
+                </div>
+                <form method="POST" action="/" class="message_form">
+                    <div class="message_block">
+                        <textarea name="message_content" placeholder="Post your response..." class="message_content"></textarea>
+                        <button type="submit" class="submit_btn">Comment</button>
+                    </div>
+                    <p class="message_content"></p>
+                </form>
+                <ul class="messages_list"></ul>
+            </li>
+        </ul>
+    </div>
+    <!-- Scripts -->
+    <script src="./../assets/js/global.js"></script>
+    <script src="./../assets/js/wall.js"></script>
+</body>
+</html>
